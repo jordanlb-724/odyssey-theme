@@ -1,0 +1,42 @@
+{
+    "close_void_tags": true,
+    "css": {
+        "indent_size": 4
+    },
+    "extensions": [
+        "html",
+        "hbs"
+    ],
+    "format_attribute_template_tags": false,
+    "format_css": false,
+    "format_js": false,
+    "ignore": [
+        "H021",
+        "H030",
+        "H031",
+        "H025"
+    ],
+    "ignore_case": true,
+    "include": [
+        "H008",
+        "H012",
+        "H014",
+        "H009"
+    ],
+    "indent": 4,
+    "indent_size": 4,
+    "indentation": 4,
+    "js": {
+        "indent_size": 4
+    },
+    "max_blank_lines": 0,
+    "max_line_length": 120,
+    "no_function_formatting": true,
+    "no_line_after_yaml": true,
+    "no_multiple_blank_lines": false,
+    "no_set_formatting": true,
+    "preserve_blank_lines": false,
+    "preserve_leading_space": true,
+    "profile": "handlebars",
+    "use_gitignore": true
+}

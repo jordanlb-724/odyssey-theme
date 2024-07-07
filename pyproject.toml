@@ -1,0 +1,27 @@
+[tool.djlint]
+profile = "handlebars"
+close_void_tags = true
+ignore_case = true
+indent = 4
+max_blank_lines = 0
+max_line_length = 120
+format_attribute_template_tags = false
+no_multiple_blank_lines = true
+no_set_formatting = true
+preserve_leading_space = false
+use_gitignore = true
+ignore = "H021, H030, H031, H025, H023"
+include = "H008, H014, H009, H012"
+extension = "html"
+format_css = false
+format_js = false
+indent_size = 4
+no_function_formatting = true
+no_line_after_yaml = true
+preserve_blank_lines = false
+
+[tool.djlint.css]
+indent_size = 4
+
+[tool.djlint.js]
+indent_size = 4
