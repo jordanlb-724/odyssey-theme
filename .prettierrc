@@ -2,7 +2,8 @@
     "printWidth": 200,
     "tabWidth": 4,
     "plugins": [
-        "prettier-plugin-astro"
+        "prettier-plugin-astro",
+        "prettier-plugin-tailwindcss"
     ],
     "overrides": [
         {
@@ -12,7 +13,7 @@
             }
         },
         {
-            "files": "*.tsx",
+            "files": "*.{jsx,ts,tsx}",
             "options": {
                 "parser": "typescript",
                 "arrowParens": "always",
@@ -29,7 +30,7 @@
                 "vueIndentScriptAndStyle": true,
                 "proseWrap": "preserve",
                 "insertPragma": false,
-                "printWidth": 120,
+                "printWidth": 80,
                 "requirePragma": false,
                 "tabWidth": 4,
                 "useTabs": false,

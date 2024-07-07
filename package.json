@@ -1,29 +1,62 @@
 {
-	"name": "odyssey-theme",
-	"version": "2.0.2",
-	"private": false,
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:treefarmstudio/odyssey-theme"
-	},
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"format": "npx prettier -w ."
-	},
-	"devDependencies": {
-		"@astrojs/lit": "^4.0.1",
-		"@astrojs/mdx": "^2.1.1",
-		"@astrojs/sitemap": "^0.1.0",
-		"@webcomponents/template-shadowroot": "^0.2.1",
-		"astro": "^4.4.13",
-		"astro-icon": "^1.1.0",
-		"date-fns": "^2.28.0",
-		"lit": "^3.1.2",
-		"prettier-plugin-astro": "^0.0.12",
+  "name": "odyssey-theme",
+  "version": "2.0.2",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:treefarmstudio/odyssey-theme"
+  },
+  "scripts": {
+    "prettier:check": "npx prettier --check \"**/*.{astro,jsx,ts,tsx,css,scss}\"",
+    "prettier:fix": "npx prettier --write \"**/*.{astro,jsx,ts,tsx,css,scss}\"",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "npx prettier -w .",
+    "astro": "astro",
+    "prettier:check-astro": "npx prettier --check \"**/*.astro\"",
+    "prettier:write-astro": "npx prettier --write \"**/*.astro\"",
+    "prettier:check-tsx": "npx prettier --check \"**/*.{jsx,ts,tsx}\"",
+    "prettier:write-tsx": "npx prettier --write \"**/*.{jsx,ts,tsx}\"",
+    "prettier:write-css": "npx prettier --write \"**/*.{css,scss}\"",
+    "prettier:check-css": "npx prettier --check \"**/*.{css,scss}\"",
+    "djlint:format": "djlint --reformat . --extension=.html --profile=handlebars",
+    "tailwind": "npx tailwindcss -i ./assets/scss/tailwind-src.css -o ./assets/scss/tailwind.scss --watch",
+    "djlint:check": "djlint . --extension=.html --check --profile=handlebars",
+    "djlint:lint-check": "djlint --lint . --profile=handlebars",
+    "stylelint": "npx stylelint **/*.{css,scss}",
+    "stylelint:fix": "npx stylelint --fix **/*.{css,scss}",
+    "eslint": "npx eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "eslint:fix": "npx eslint --fix \"**/*.{js,jsx,ts,tsx}\"",
+    "create-free-demo": "node create-free-demo.js"
+  },
+  "devDependencies": {
+    "@astrojs/lit": "^4.0.1",
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/sitemap": "^0.1.0",
     "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/mdi": "^1.1.64"
-	}
+    "@iconify-json/mdi": "^1.1.64",
+    "@types/eslint": "^8.56.10",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "^4.4.13",
+    "astro-icon": "^1.1.0",
+    "date-fns": "^2.28.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-astro": "^1.2.2",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-tsdoc": "^0.3.0",
+    "lit": "^3.1.2",
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-tailwindcss": "^0.6.5"
+  }
 }
