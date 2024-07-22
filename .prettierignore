@@ -36,21 +36,12 @@ v6-4-2
 *.handlebars
 .handlebars.json
 *.handlebars.json
-.css
-*.css
-.min.css
-*.min.css
 .min.js
 *.min.js
-.min.css.map
-*.min.css.map
 **/.js
 **/.json
 **/.handlebars
 **/.handlebars.json
-**/.css
-**/.min.css
-**/.min.css.map
 
 # Default Ignores
 **/.git
@@ -60,8 +51,6 @@ v6-4-2
 **/.git
 **/.svn
 **/.hg
-**/.min.css
-**/.css
 **/.min.js
 **/.js
 **/.handlebars.json
@@ -69,7 +58,6 @@ v6-4-2
 **/.js
 
 # Ignore all of the following files:
-**/*.css
 **/*.js
 **/*.json
 **/*.eslintrc
@@ -80,8 +68,5 @@ v6-4-2
 **/*.json
 **/*.handlebars
 **/*.handlebars.json
-**/*.css
-**/*.min.css
-**/*.min.css.map
 **/*.js
 **/*.min.js
